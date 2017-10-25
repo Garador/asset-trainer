@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+    //link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/jasmine.css")
+    //script(type="text/javascript",src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/jasmine.js")
+    //script(type="text/javascript",src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/jasmine-html.js")
+    //script(type="text/javascript",src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/boot.js")
+
+    //script(type="text/javascript",src="/javascripts/mainTest.js")
+    //script(type="text/javascript",src="/spec/mainSpec.js")
+
+
+    //<link rel="shortcut icon" type="image/png" href="jasmine/lib/jasmine-{#.#.#}/jasmine_favicon.png">
+    //<link rel="stylesheet" type="text/css" href="jasmine/lib/jasmine-{#.#.#}/jasmine.css">
+    //<script type="text/javascript" src="jasmine/lib/jasmine-{#.#.#}/jasmine.js"></script>
+    //<script type="text/javascript" src="jasmine/lib/jasmine-{#.#.#}/jasmine-html.js"></script>
+    //<script type="text/javascript" src="jasmine/lib/jasmine-{#.#.#}/boot.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    script.
+      var config = {
+        apiKey: "AIzaSyAJDJ4twCNNkDf3NfXXs0hVFe0Fse8qZWY",
+        authDomain: "portfolio-9dcf5.firebaseapp.com",
+        databaseURL: "https://portfolio-9dcf5.firebaseio.com",
+        projectId: "portfolio-9dcf5",
+        storageBucket: "",
+        messagingSenderId: "865561662975"
+      };
+      firebase.initializeApp(config);
+  body
+    block content

@@ -1,0 +1,27 @@
+extends layout
+block content
+  .col-xs-12(id="loginApp",ng-controller="loginController")
+    span Hello {{greetMe}}
+    div.form.col-xs-8
+      .form-group
+        label Email
+        input.form-control(type="email",ng-model="loginEmail",maxlength="35")
+        label Password
+        input.form-control(type="password",ng-model="loginPassword",maxlength="15")
+      .form-group
+        button.btn.btn-success(ng-click="logIn()") Log In
+  .col-xs-12(id="createApp",ng-controller="createMyAccount")
+    span Hello {{greetMe}}
+    form.col-xs-8
+      .form-group
+        label Email
+        input.form-control(type="email",ng-model="createEmail")
+        label Password
+        input.form-control(type="password", ng-model="createPassword_1")
+        label Repeat Password
+        input.form-control(type="password", ng-model="createPassword_2")
+      .form-group
+        button.btn.btn-success(ng-click="createAccount(createEmail, createPassword_1, createPassword_2)") Create Account
+  script(src="javascripts/angular/services/authService.js")
+  script(src="javascripts/angular/services/validationService.js")
+  script(src="javascripts/angular/controllers/auth/access.js")

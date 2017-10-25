@@ -1,0 +1,13 @@
+script(src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js")
+script.
+  var config = !{JSON.stringify(FB_INI_data).replace(/<\//g, '<\\/')}
+  /*var config = {
+    apiKey: "AIzaSyAJDJ4twCNNkDf3NfXXs0hVFe0Fse8qZWY",
+    authDomain: "portfolio-9dcf5.firebaseapp.com",
+    databaseURL: "https://portfolio-9dcf5.firebaseio.com",
+    projectId: "portfolio-9dcf5",
+    storageBucket: "",
+    messagingSenderId: "865561662975"
+  };
+  */
+  firebase.initializeApp(config);
