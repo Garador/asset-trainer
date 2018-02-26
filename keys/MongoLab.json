@@ -1,8 +1,0 @@
-{
-    "prefix":"mongodb://"
-    ,"Username":"portfolio_1_admin_1"
-    ,"Password":"nCzvvhywsm6A6G3ZR6ifDchfHLm"
-    ,"Host":"ds229465.mlab.com:29465"
-    ,"Database":"portfolio_1"
-    ,"Example":"mongodb://<dbuser>:<dbpassword>@ds229465.mlab.com:29465/portfolio_1"
-}
